@@ -10,14 +10,21 @@ def bubble_sort(arr)
     swapped = false
     (n-1).times do |i|
       if arr[i] > arr[i+1]
+        #compare the numbers  if the one in front is greater 
         arr[i], arr[i + 1] = arr[i + 1], arr[i]
+
+        # if the its greater their positions are swapped
         swapped = true
       end
+
+      # since we are using times the above loop is run and since the unsorted number is always bubbled to its right position, comparing it again is a waste of time hence n-1 used
     end
 
     #display once one sort of the array is complete
     puts arr.inspect
   end
+
+  #return the array.
   arr
 end 
 
