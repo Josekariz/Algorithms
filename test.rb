@@ -18,6 +18,8 @@ def bubble_sort(arr)
       end
 
       # since we are using times the above loop is run and since the unsorted number is always bubbled to its right position, comparing it again is a waste of time hence n-1 used
+
+
     end
 
     #display once one sort of the array is complete
@@ -31,3 +33,14 @@ end
 numbers = [9,8,7,6,5,4,3,2,1]
 sorted_numbers = bubble_sort(numbers)
 puts "Final Sorted Array: #{sorted_numbers}"
+
+
+# How it works
+        # [7, 6, 5, 4, 3, 2, 1, 8, 9]
+        # [6, 5, 4, 3, 2, 1, 7, 8, 9]
+        # [5, 4, 3, 2, 1, 6, 7, 8, 9]
+        # [4, 3, 2, 1, 5, 6, 7, 8, 9]
+        # [3, 2, 1, 4, 5, 6, 7, 8, 9]
+        # [2, 1, 3, 4, 5, 6, 7, 8, 9]
+        # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        # [1, 2, 3, 4, 5, 6, 7, 8, 9]
